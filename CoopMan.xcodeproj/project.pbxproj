@@ -48,6 +48,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D518159121B2557500FEC9CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D56881C621B234EB00A51A8F /* Main.storyboard */,
+				D56881CB21B234EB00A51A8F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D518159221B2559400FEC9CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D56881C421B234EB00A51A8F /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D518159321B255AE00FEC9CE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D56881C921B234EB00A51A8F /* Assets.xcassets */,
+				D56881CE21B234EB00A51A8F /* Info.plist */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		D56881B621B234EA00A51A8F = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				D56881C221B234EB00A51A8F /* AppDelegate.swift */,
-				D56881C421B234EB00A51A8F /* ViewController.swift */,
-				D56881C621B234EB00A51A8F /* Main.storyboard */,
-				D56881C921B234EB00A51A8F /* Assets.xcassets */,
-				D56881CB21B234EB00A51A8F /* LaunchScreen.storyboard */,
-				D56881CE21B234EB00A51A8F /* Info.plist */,
+				D518159121B2557500FEC9CE /* Storyboards */,
+				D518159221B2559400FEC9CE /* Views */,
+				D518159321B255AE00FEC9CE /* Helpers */,
 			);
 			path = CoopMan;
 			sourceTree = "<group>";
@@ -85,7 +109,6 @@
 				8DC740AD40D1BE937FA7C4E1 /* Pods-CoopMan.debug.xcconfig */,
 				9B9D91A8314A2910B3D0CAFE /* Pods-CoopMan.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
