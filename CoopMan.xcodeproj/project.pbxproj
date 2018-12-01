@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4DF875B2139671687CB12B6 /* Pods_CoopMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099493A3A7CA9E9CEE639F /* Pods_CoopMan.framework */; };
 		D56881C321B234EB00A51A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56881C221B234EB00A51A8F /* AppDelegate.swift */; };
 		D56881C521B234EB00A51A8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56881C421B234EB00A51A8F /* ViewController.swift */; };
 		D56881C821B234EB00A51A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56881C621B234EB00A51A8F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DC740AD40D1BE937FA7C4E1 /* Pods-CoopMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoopMan.debug.xcconfig"; path = "Target Support Files/Pods-CoopMan/Pods-CoopMan.debug.xcconfig"; sourceTree = "<group>"; };
+		9B9D91A8314A2910B3D0CAFE /* Pods-CoopMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoopMan.release.xcconfig"; path = "Target Support Files/Pods-CoopMan/Pods-CoopMan.release.xcconfig"; sourceTree = "<group>"; };
 		D56881BF21B234EA00A51A8F /* CoopMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoopMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56881C221B234EB00A51A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D56881C421B234EB00A51A8F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D56881C921B234EB00A51A8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D56881CC21B234EB00A51A8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D56881CE21B234EB00A51A8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1099493A3A7CA9E9CEE639F /* Pods_CoopMan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoopMan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DF875B2139671687CB12B6 /* Pods_CoopMan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC78A1339BD9F7F09E6E79F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1099493A3A7CA9E9CEE639F /* Pods_CoopMan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D56881B621B234EA00A51A8F = {
 			isa = PBXGroup;
 			children = (
 				D56881C121B234EA00A51A8F /* CoopMan */,
 				D56881C021B234EA00A51A8F /* Products */,
+				EC1362FABCE17F7A1CEBBBC4 /* Pods */,
+				CC78A1339BD9F7F09E6E79F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,16 @@
 			path = CoopMan;
 			sourceTree = "<group>";
 		};
+		EC1362FABCE17F7A1CEBBBC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DC740AD40D1BE937FA7C4E1 /* Pods-CoopMan.debug.xcconfig */,
+				9B9D91A8314A2910B3D0CAFE /* Pods-CoopMan.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D56881D121B234EB00A51A8F /* Build configuration list for PBXNativeTarget "CoopMan" */;
 			buildPhases = (
+				2B10FB82FA13CDE6062AEB4A /* [CP] Check Pods Manifest.lock */,
 				D56881BB21B234EA00A51A8F /* Sources */,
 				D56881BC21B234EA00A51A8F /* Frameworks */,
 				D56881BD21B234EA00A51A8F /* Resources */,
+				54822B6EB1FD962DFDF708B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B10FB82FA13CDE6062AEB4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoopMan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54822B6EB1FD962DFDF708B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoopMan/Pods-CoopMan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoopMan/Pods-CoopMan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D56881BB21B234EA00A51A8F /* Sources */ = {
@@ -280,6 +360,7 @@
 		};
 		D56881D221B234EB00A51A8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC740AD40D1BE937FA7C4E1 /* Pods-CoopMan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +379,7 @@
 		};
 		D56881D321B234EB00A51A8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B9D91A8314A2910B3D0CAFE /* Pods-CoopMan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
