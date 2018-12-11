@@ -13,10 +13,10 @@ class AppController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    perform(#selector(showLogin), with: nil, afterDelay: 0.7)
   }
   
   @objc func showLogin() {
-    let loginController = LoginViewController()
     performSegue(withIdentifier: "showLogin", sender: nil)
   }
   
