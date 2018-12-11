@@ -65,7 +65,45 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jr-JP-3Va">
                                 <rect key="frame" x="40" y="335" width="295" height="282"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jca-yO-OHa">
+                                        <rect key="frame" x="40" y="13" width="62" height="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your usename ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-Zy-96e">
+                                        <rect key="frame" x="40" y="29" width="215" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDm-al-su5">
+                                        <rect key="frame" x="40" y="82" width="59" height="16"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-SL-U40">
+                                        <rect key="frame" x="40" y="98" width="215" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FbU-Zy-96e" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="5Ai-fZ-GbR"/>
+                                    <constraint firstItem="jca-yO-OHa" firstAttribute="top" secondItem="1jr-JP-3Va" secondAttribute="top" constant="13" id="9U7-Tx-vdY"/>
+                                    <constraint firstAttribute="trailing" secondItem="KZU-SL-U40" secondAttribute="trailing" constant="40" id="BKG-8A-lBU"/>
+                                    <constraint firstItem="jca-yO-OHa" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="OaO-eX-ftH"/>
+                                    <constraint firstItem="FbU-Zy-96e" firstAttribute="top" secondItem="jca-yO-OHa" secondAttribute="bottom" id="TaR-OM-vuc"/>
+                                    <constraint firstItem="iDm-al-su5" firstAttribute="top" secondItem="FbU-Zy-96e" secondAttribute="bottom" constant="23" id="ZYs-d7-bzL"/>
+                                    <constraint firstItem="KZU-SL-U40" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="ZtN-SQ-FAC"/>
+                                    <constraint firstItem="iDm-al-su5" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="nwf-VX-4H7"/>
+                                    <constraint firstItem="KZU-SL-U40" firstAttribute="top" secondItem="iDm-al-su5" secondAttribute="bottom" id="xNW-G4-4iv"/>
+                                    <constraint firstAttribute="trailing" secondItem="FbU-Zy-96e" secondAttribute="trailing" constant="40" id="y0Z-fU-fnC"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.90196078430000004" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

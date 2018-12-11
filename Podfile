@@ -9,6 +9,5 @@ target 'CoopMan' do
   pod 'Alamofire'
   pod 'RealmSwift'
   pod 'SwiftyJSON'
-  pod 'TextFieldEffects'
   
 end
