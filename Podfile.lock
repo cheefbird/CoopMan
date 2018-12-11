@@ -6,11 +6,13 @@ PODS:
   - RealmSwift (3.12.0):
     - Realm (= 3.12.0)
   - SwiftyJSON (4.2.0)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
   - Alamofire
   - RealmSwift
   - SwiftyJSON
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,13 +20,15 @@ SPEC REPOS:
     - Realm
     - RealmSwift
     - SwiftyJSON
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
   RealmSwift: 5576324033f0aa5ef1e0a839a3da2281dff47a7f
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: 610f2e5ce8fdca4ba47e9a4bde9357cbf0e9934f
+PODFILE CHECKSUM: 81b23ed55024040dac20860a723062b5a3c2937c
 
 COCOAPODS: 1.6.0.beta.1
