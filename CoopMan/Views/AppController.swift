@@ -8,13 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class AppController: UIViewController {
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    
   }
-
-
+  
+  @objc func showLogin() {
+    let loginController = LoginViewController()
+    performSegue(withIdentifier: "showLogin", sender: nil)
+  }
+  
 }
 
