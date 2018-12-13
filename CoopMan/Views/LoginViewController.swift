@@ -23,13 +23,6 @@ class LoginViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
-    
-    interactiveContainer.layer.borderColor = UIColor.black.cgColor
-    interactiveContainer.layer.borderWidth = 2
-    interactiveContainer.layer.cornerRadius = 15
-        
-
   }
   
   

@@ -92,9 +92,9 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf8-gG-Ry8" customClass="DesignableButton" customModule="CoopMan" customModuleProvider="target">
                                         <rect key="frame" x="67" y="140" width="161" height="30"/>
-                                        <color key="backgroundColor" red="0.90196078430000004" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.53725490196078429" green="0.82352941176470584" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Log In">
-                                            <color key="titleColor" red="0.88143354650000005" green="0.39614079369999999" blue="0.37476237039999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" red="0.019607843137254902" green="0.40000000000000002" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
