@@ -10,15 +10,14 @@ import UIKit
 
 extension UIColor {
   struct Project {
-    static let softPink = UIColor(red: 230, green: 198, blue: 198, alpha: 1.0)
+    static let softPink = UIColor(red: 247, green: 207, blue: 207, alpha: 1.0)
     
-    static let darkRed = UIColor(red: 73, green: 50, blue: 50, alpha: 1.0)
+    static let grey = UIColor(red: 159, green: 162, blue: 178, alpha: 1.0)
     
-    static let deepRed = UIColor(red: 67, green: 32, blue: 31, alpha: 1.0)
+    static let teal = UIColor(red: 137, green: 210, blue: 220, alpha: 1.0)
     
-    static let darkGrey = UIColor(red: 139, green: 131, blue: 134, alpha: 1.0)
+    static let navy = UIColor(red: 5, green: 102, blue: 141, alpha: 1.0)
     
-    static let lightGrey = UIColor(red: 179, green: 169, blue: 173, alpha: 1.0)
+    static let darkGrey = UIColor(red: 53, green: 59, blue: 60, alpha: 1.0)
   }
-  
 }
