@@ -1,18 +1,22 @@
 //
-//  UIButton+DesignableButton.swift
+//  UIView+DesignableView.swift
 //  CoopMan
 //
-//  Created by Francis Breidenbach on 12/11/18.
+//  Created by Francis Breidenbach on 12/12/18.
 //  Copyright © 2018 Francis Breidenbach. All rights reserved.
 //
 
 import UIKit
 
-@IBDesignable class DesignableButton: UIButton {
-  
-}
+// MARK: - Classes
 
-extension UIButton {
+@IBDesignable class DesignableView: UIView {}
+
+@IBDesignable class DesignableButton: UIButton {}
+
+// MARK: - Extensions
+
+extension UIView {
   @IBInspectable var cornerRadius: CGFloat {
     get {
       return layer.cornerRadius
@@ -21,7 +25,7 @@ extension UIButton {
       layer.cornerRadius = newValue
     }
   }
-  
+
   @IBInspectable var borderWidth: CGFloat {
     get {
       return layer.borderWidth
@@ -30,7 +34,7 @@ extension UIButton {
       layer.borderWidth = newValue
     }
   }
-  
+
   @IBInspectable var borderColor: UIColor {
     get {
       if let color = layer.borderColor {

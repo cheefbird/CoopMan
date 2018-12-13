@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C4DF875B2139671687CB12B6 /* Pods_CoopMan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1099493A3A7CA9E9CEE639F /* Pods_CoopMan.framework */; };
-		D55944E221C0EF0E00C30D73 /* UIButton+DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55944E121C0EF0E00C30D73 /* UIButton+DesignableButton.swift */; };
+		D545ABB721C2054700484F34 /* UIView+Designables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D545ABB621C2054700484F34 /* UIView+Designables.swift */; };
 		D56881C321B234EB00A51A8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56881C221B234EB00A51A8F /* AppDelegate.swift */; };
 		D56881C521B234EB00A51A8F /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56881C421B234EB00A51A8F /* AppController.swift */; };
 		D56881C821B234EB00A51A8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56881C621B234EB00A51A8F /* Main.storyboard */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		8DC740AD40D1BE937FA7C4E1 /* Pods-CoopMan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoopMan.debug.xcconfig"; path = "Target Support Files/Pods-CoopMan/Pods-CoopMan.debug.xcconfig"; sourceTree = "<group>"; };
 		9B9D91A8314A2910B3D0CAFE /* Pods-CoopMan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoopMan.release.xcconfig"; path = "Target Support Files/Pods-CoopMan/Pods-CoopMan.release.xcconfig"; sourceTree = "<group>"; };
-		D55944E121C0EF0E00C30D73 /* UIButton+DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DesignableButton.swift"; sourceTree = "<group>"; };
+		D545ABB621C2054700484F34 /* UIView+Designables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Designables.swift"; sourceTree = "<group>"; };
 		D56881BF21B234EA00A51A8F /* CoopMan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoopMan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56881C221B234EB00A51A8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D56881C421B234EB00A51A8F /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			children = (
 				D5B03E0021BF2A7B0061CECA /* UIView+Anchors.swift */,
 				D5B03E0221BF310F0061CECA /* UIColor+Colors.swift */,
-				D55944E121C0EF0E00C30D73 /* UIButton+DesignableButton.swift */,
+				D545ABB621C2054700484F34 /* UIView+Designables.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -259,11 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5B03DFE21BF265E0061CECA /* LoginViewController.swift in Sources */,
+				D545ABB721C2054700484F34 /* UIView+Designables.swift in Sources */,
 				D5B03E0121BF2A7B0061CECA /* UIView+Anchors.swift in Sources */,
 				D5B03E0321BF310F0061CECA /* UIColor+Colors.swift in Sources */,
 				D56881C521B234EB00A51A8F /* AppController.swift in Sources */,
 				D56881C321B234EB00A51A8F /* AppDelegate.swift in Sources */,
-				D55944E221C0EF0E00C30D73 /* UIButton+DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
