@@ -10,10 +10,25 @@ import UIKit
 
 class LoginViewController: UIViewController {
   
+  // MARK: - Outlets
+  
+  @IBOutlet var interactiveContainer: UIView!
+  
+  @IBOutlet weak var userNameField: UITextField!
+  
+  @IBOutlet weak var passwordField: UITextField!
+  
+  // MARK: - Overrides
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     // Do any additional setup after loading the view.
+    
+    interactiveContainer.layer.borderColor = UIColor.black.cgColor
+    interactiveContainer.layer.borderWidth = 2
+    interactiveContainer.layer.cornerRadius = 15
+        
 
   }
   
