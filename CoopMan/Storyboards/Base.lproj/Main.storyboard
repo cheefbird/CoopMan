@@ -36,7 +36,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-kQ-tVh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-kQ-tVh" customClass="DesignableButton" customModule="CoopMan" customModuleProvider="target">
                                 <rect key="frame" x="319" y="30" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Alu-B0-QD7"/>
@@ -44,6 +44,7 @@
                                     <constraint firstAttribute="width" constant="40" id="tsX-Y6-hIh"/>
                                     <constraint firstAttribute="height" constant="40" id="u66-X0-Bdr"/>
                                 </constraints>
+                                <color key="tintColor" red="0.62352941176470589" green="0.63529411764705879" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="icon_close"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vq-RE-T0W">
@@ -63,13 +64,13 @@
                                     <constraint firstAttribute="height" constant="160" id="kCF-gq-iJU"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jr-JP-3Va">
-                                <rect key="frame" x="40" y="335" width="295" height="282"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jr-JP-3Va" customClass="DesignableView" customModule="CoopMan" customModuleProvider="target">
+                                <rect key="frame" x="40" y="300" width="295" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jca-yO-OHa">
                                         <rect key="frame" x="40" y="13" width="62" height="16"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your usename ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FbU-Zy-96e">
@@ -81,7 +82,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDm-al-su5">
                                         <rect key="frame" x="40" y="82" width="59" height="16"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KZU-SL-U40">
@@ -91,10 +92,10 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf8-gG-Ry8" customClass="DesignableButton" customModule="CoopMan" customModuleProvider="target">
-                                        <rect key="frame" x="67" y="140" width="161" height="30"/>
-                                        <color key="backgroundColor" red="0.53725490196078429" green="0.82352941176470584" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="67" y="153" width="161" height="30"/>
+                                        <color key="backgroundColor" red="0.96862745100000003" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Log In">
-                                            <color key="titleColor" red="0.019607843137254902" green="0.40000000000000002" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.20784313730000001" green="0.23137254900000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -104,14 +105,15 @@
                                                 <real key="value" value="2"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" red="0.28627450980392155" green="0.19607843137254902" blue="0.19607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="value" red="0.20784313725490194" green="0.23137254901960785" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.62352941179999999" green="0.63529411759999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="kf8-gG-Ry8" firstAttribute="centerX" secondItem="1jr-JP-3Va" secondAttribute="centerX" id="04G-Ma-u3u"/>
+                                    <constraint firstAttribute="bottom" secondItem="kf8-gG-Ry8" secondAttribute="bottom" constant="20" id="1MR-ig-WXn"/>
                                     <constraint firstItem="FbU-Zy-96e" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="5Ai-fZ-GbR"/>
                                     <constraint firstItem="jca-yO-OHa" firstAttribute="top" secondItem="1jr-JP-3Va" secondAttribute="top" constant="13" id="9U7-Tx-vdY"/>
                                     <constraint firstAttribute="trailing" secondItem="KZU-SL-U40" secondAttribute="trailing" constant="40" id="BKG-8A-lBU"/>
@@ -119,25 +121,41 @@
                                     <constraint firstItem="FbU-Zy-96e" firstAttribute="top" secondItem="jca-yO-OHa" secondAttribute="bottom" id="TaR-OM-vuc"/>
                                     <constraint firstItem="iDm-al-su5" firstAttribute="top" secondItem="FbU-Zy-96e" secondAttribute="bottom" constant="23" id="ZYs-d7-bzL"/>
                                     <constraint firstItem="KZU-SL-U40" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="ZtN-SQ-FAC"/>
-                                    <constraint firstItem="kf8-gG-Ry8" firstAttribute="top" secondItem="KZU-SL-U40" secondAttribute="bottom" constant="12" id="jiN-uP-cqd"/>
+                                    <constraint firstItem="kf8-gG-Ry8" firstAttribute="top" secondItem="KZU-SL-U40" secondAttribute="bottom" constant="25" id="jiN-uP-cqd"/>
                                     <constraint firstItem="iDm-al-su5" firstAttribute="leading" secondItem="1jr-JP-3Va" secondAttribute="leading" constant="40" id="nwf-VX-4H7"/>
                                     <constraint firstItem="kf8-gG-Ry8" firstAttribute="width" secondItem="KZU-SL-U40" secondAttribute="width" multiplier="0.75" id="oNF-8M-2tn"/>
                                     <constraint firstItem="KZU-SL-U40" firstAttribute="top" secondItem="iDm-al-su5" secondAttribute="bottom" id="xNW-G4-4iv"/>
                                     <constraint firstAttribute="trailing" secondItem="FbU-Zy-96e" secondAttribute="trailing" constant="40" id="y0Z-fU-fnC"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2018 NELA Co-Op" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-8I-hfH">
+                                <rect key="frame" x="112" y="650" width="151" height="14"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" red="0.62352941179999999" green="0.63529411759999999" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lBs-kQ-tVh" firstAttribute="top" secondItem="KFF-lU-Jox" secondAttribute="top" constant="10" id="Dfl-xJ-WXZ"/>
                             <constraint firstItem="KFF-lU-Jox" firstAttribute="trailing" secondItem="1jr-JP-3Va" secondAttribute="trailing" constant="40" id="EWv-o7-BaR"/>
                             <constraint firstItem="1jr-JP-3Va" firstAttribute="leading" secondItem="KFF-lU-Jox" secondAttribute="leading" constant="40" id="Ghu-7N-Rm7"/>
+                            <constraint firstItem="oDG-8I-hfH" firstAttribute="centerX" secondItem="g3b-OP-eb5" secondAttribute="centerX" id="Ktn-bf-lGl"/>
+                            <constraint firstItem="KFF-lU-Jox" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1jr-JP-3Va" secondAttribute="bottom" priority="750" id="PCP-Rp-TZj"/>
                             <constraint firstItem="KFF-lU-Jox" firstAttribute="trailing" secondItem="2Vq-RE-T0W" secondAttribute="trailing" constant="40" id="Rdm-dd-61W"/>
-                            <constraint firstItem="KFF-lU-Jox" firstAttribute="bottom" secondItem="1jr-JP-3Va" secondAttribute="bottom" constant="50" id="YJk-lT-CIa"/>
                             <constraint firstItem="2Vq-RE-T0W" firstAttribute="top" secondItem="lBs-kQ-tVh" secondAttribute="bottom" constant="30" id="fdp-rh-oCQ"/>
+                            <constraint firstItem="KFF-lU-Jox" firstAttribute="bottom" secondItem="oDG-8I-hfH" secondAttribute="bottom" constant="3" id="okD-yI-rjW"/>
                             <constraint firstItem="KFF-lU-Jox" firstAttribute="trailing" secondItem="lBs-kQ-tVh" secondAttribute="trailing" constant="16" id="qFm-vM-W1D"/>
+                            <constraint firstItem="1jr-JP-3Va" firstAttribute="top" secondItem="2Vq-RE-T0W" secondAttribute="bottom" constant="40" id="qmd-tw-fCu"/>
                             <constraint firstItem="2Vq-RE-T0W" firstAttribute="leading" secondItem="KFF-lU-Jox" secondAttribute="leading" constant="40" id="s5X-1x-Yct"/>
-                            <constraint firstItem="1jr-JP-3Va" firstAttribute="top" secondItem="2Vq-RE-T0W" secondAttribute="bottom" constant="75" id="wJ0-EW-RtZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KFF-lU-Jox"/>
                     </view>
