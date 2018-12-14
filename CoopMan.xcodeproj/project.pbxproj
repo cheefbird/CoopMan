@@ -74,13 +74,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D518159321B255AE00FEC9CE /* Helpers */ = {
+		D518159321B255AE00FEC9CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				D56881C921B234EB00A51A8F /* Assets.xcassets */,
 				D56881CE21B234EB00A51A8F /* Info.plist */,
 			);
-			path = Helpers;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D56881B621B234EA00A51A8F = {
@@ -107,7 +107,7 @@
 				D56881C221B234EB00A51A8F /* AppDelegate.swift */,
 				D518159121B2557500FEC9CE /* Storyboards */,
 				D518159221B2559400FEC9CE /* Views */,
-				D518159321B255AE00FEC9CE /* Helpers */,
+				D518159321B255AE00FEC9CE /* Supporting Files */,
 				D5B03DFF21BF29A40061CECA /* Extensions */,
 			);
 			path = CoopMan;
