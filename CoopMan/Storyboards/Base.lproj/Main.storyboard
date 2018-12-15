@@ -59,8 +59,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="hVu-JB-3dw" firstAttribute="centerX" secondItem="2Vq-RE-T0W" secondAttribute="centerX" id="6G0-Fz-KRZ"/>
+                                    <constraint firstAttribute="width" secondItem="2Vq-RE-T0W" secondAttribute="height" multiplier="59:32" id="8a7-jn-faR"/>
                                     <constraint firstItem="hVu-JB-3dw" firstAttribute="centerY" secondItem="2Vq-RE-T0W" secondAttribute="centerY" id="bg2-0u-ymZ"/>
-                                    <constraint firstAttribute="height" constant="160" id="kCF-gq-iJU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -155,6 +155,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.53725490200000003" green="0.82352941180000006" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oDG-8I-hfH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1jr-JP-3Va" secondAttribute="bottom" constant="1" id="Bq5-sD-RsK"/>
                             <constraint firstItem="lBs-kQ-tVh" firstAttribute="top" secondItem="KFF-lU-Jox" secondAttribute="top" constant="10" id="Dfl-xJ-WXZ"/>
                             <constraint firstItem="KFF-lU-Jox" firstAttribute="trailing" secondItem="1jr-JP-3Va" secondAttribute="trailing" constant="40" id="EWv-o7-BaR"/>
                             <constraint firstItem="1jr-JP-3Va" firstAttribute="leading" secondItem="KFF-lU-Jox" secondAttribute="leading" constant="40" id="Ghu-7N-Rm7"/>
