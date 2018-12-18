@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gqf-rM-wV5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -17,21 +17,31 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-Fp-NSU">
+                                <rect key="frame" x="93.5" y="309.5" width="188" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x2a-Fp-NSU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="adO-JH-O4K"/>
+                            <constraint firstItem="x2a-Fp-NSU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ymk-cy-n30"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="Tf1-3N-g8h" kind="presentation" identifier="showLogin" id="JmS-Sa-Ycs"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="ICr-0w-hfJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="133"/>
+            <point key="canvasLocation" x="-846" y="902"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="rqW-I5-TIn">
             <objects>
-                <viewController id="Tf1-3N-g8h" customClass="LoginViewController" customModule="CoopMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="Tf1-3N-g8h" customClass="LoginViewController" customModule="CoopMan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3b-OP-eb5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +56,9 @@
                                 </constraints>
                                 <color key="tintColor" red="0.96862745098039216" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="icon_close"/>
+                                <connections>
+                                    <action selector="dismissLogin" destination="Tf1-3N-g8h" eventType="touchUpInside" id="K5g-lk-2nK"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vq-RE-T0W" customClass="DesignableView" customModule="CoopMan" customModuleProvider="target">
                                 <rect key="frame" x="40" y="100" width="295" height="160"/>
@@ -178,7 +191,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPB-Eg-KhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.60000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1126" y="133"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vO4-s5-SeR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gqf-rM-wV5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MBg-IY-sFd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tf1-3N-g8h" kind="presentation" identifier="showLogin" id="BzW-WO-0pl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7ym-eP-9W8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeQ-8c-MK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
