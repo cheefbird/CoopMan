@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gqf-rM-wV5">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,34 +10,44 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--App Controller-->
+        <!--Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AppController" customModule="CoopMan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2a-Fp-NSU">
+                                <rect key="frame" x="93.666666666666686" y="382" width="188" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.96862745098039216" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x2a-Fp-NSU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="adO-JH-O4K"/>
+                            <constraint firstItem="x2a-Fp-NSU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ymk-cy-n30"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="Tf1-3N-g8h" kind="presentation" identifier="showLogin" id="JmS-Sa-Ycs"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="Me" image="icon_me" id="ICr-0w-hfJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="133"/>
+            <point key="canvasLocation" x="-846" y="902"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="rqW-I5-TIn">
             <objects>
-                <viewController id="Tf1-3N-g8h" customClass="LoginViewController" customModule="CoopMan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="Tf1-3N-g8h" customClass="LoginViewController" customModule="CoopMan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g3b-OP-eb5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBs-kQ-tVh" customClass="DesignableButton" customModule="CoopMan" customModuleProvider="target">
-                                <rect key="frame" x="319" y="30" width="40" height="40"/>
+                                <rect key="frame" x="319" y="54" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Alu-B0-QD7"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="BUu-8X-UYZ"/>
@@ -46,12 +56,15 @@
                                 </constraints>
                                 <color key="tintColor" red="0.96862745098039216" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="icon_close"/>
+                                <connections>
+                                    <action selector="dismissLogin" destination="Tf1-3N-g8h" eventType="touchUpInside" id="K5g-lk-2nK"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Vq-RE-T0W" customClass="DesignableView" customModule="CoopMan" customModuleProvider="target">
-                                <rect key="frame" x="40" y="100" width="295" height="160"/>
+                                <rect key="frame" x="40" y="124" width="295" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Branding Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVu-JB-3dw">
-                                        <rect key="frame" x="92.5" y="69.5" width="110" height="21"/>
+                                        <rect key="frame" x="92.666666666666657" y="69.666666666666657" width="110" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.20784313725490194" green="0.23137254901960785" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -75,7 +88,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jr-JP-3Va" customClass="DesignableView" customModule="CoopMan" customModuleProvider="target">
-                                <rect key="frame" x="40" y="300" width="295" height="203"/>
+                                <rect key="frame" x="40" y="324" width="295" height="203"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jca-yO-OHa">
                                         <rect key="frame" x="40" y="13" width="62" height="16"/>
@@ -147,7 +160,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright 2018 NELA Co-Op" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDG-8I-hfH">
-                                <rect key="frame" x="112" y="650" width="151" height="14"/>
+                                <rect key="frame" x="112" y="761" width="151" height="14"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -178,10 +191,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPB-Eg-KhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.60000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1126" y="133"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vO4-s5-SeR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gqf-rM-wV5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MBg-IY-sFd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20784313730000001" green="0.23137254900000001" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.53725490200000003" green="0.82352941180000006" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tf1-3N-g8h" kind="presentation" identifier="showLogin" id="BzW-WO-0pl"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="7ym-eP-9W8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeQ-8c-MK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197.59999999999999" y="132.68365817091455"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon_close" width="200" height="200"/>
+        <image name="icon_me" width="25" height="25"/>
     </resources>
 </document>

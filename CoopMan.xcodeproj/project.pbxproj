@@ -83,6 +83,16 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D55CF6B221C9B4740013C1FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D5B03E0021BF2A7B0061CECA /* UIView+Anchors.swift */,
+				D5B03E0221BF310F0061CECA /* UIColor+Colors.swift */,
+				D545ABB621C2054700484F34 /* UIView+Designables.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D56881B621B234EA00A51A8F = {
 			isa = PBXGroup;
 			children = (
@@ -108,19 +118,17 @@
 				D518159121B2557500FEC9CE /* Storyboards */,
 				D518159221B2559400FEC9CE /* Views */,
 				D518159321B255AE00FEC9CE /* Supporting Files */,
-				D5B03DFF21BF29A40061CECA /* Extensions */,
+				D5B03DFF21BF29A40061CECA /* Helpers */,
 			);
 			path = CoopMan;
 			sourceTree = "<group>";
 		};
-		D5B03DFF21BF29A40061CECA /* Extensions */ = {
+		D5B03DFF21BF29A40061CECA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				D5B03E0021BF2A7B0061CECA /* UIView+Anchors.swift */,
-				D5B03E0221BF310F0061CECA /* UIColor+Colors.swift */,
-				D545ABB621C2054700484F34 /* UIView+Designables.swift */,
+				D55CF6B221C9B4740013C1FE /* Extensions */,
 			);
-			path = Extensions;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		EC1362FABCE17F7A1CEBBBC4 /* Pods */ = {

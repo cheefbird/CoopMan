@@ -10,14 +10,21 @@ import UIKit
 
 class AppController: UIViewController {
   
+  // MARK: - Overrides
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    perform(#selector(showLogin), with: nil, afterDelay: 0.7)
+    let isLoggedIn = false
+    
+    if !isLoggedIn {
+      perform(#selector(showLogin), with: nil, afterDelay: 0.7)
+    }
   }
   
   @objc func showLogin() {
-    performSegue(withIdentifier: "showLogin", sender: nil)
+    self.tabBarController?.performSegue(withIdentifier: "showLogin", sender: nil)
+    
   }
   
 }
